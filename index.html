@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./public/js/tailwind.js"></script>
+    <style>
+      .absolute {
+        transform: translate(-50%, -50%);
+      }
+
+      .gradient {
+        background-image: linear-gradient(
+          140deg,
+          rgba(0, 0, 0, 0.829),
+          transparent
+        );
+      }
+      input {
+        outline: none;
+      }
+      .arrow-sample {
+        background-color: #0002;
+      }
+    </style>
+    <title>Stay Starts</title>
+  </head>
+
+  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <header
+      style="background-image: url(./public/img/HomeRoom2.jpg)"
+      class="h-[600px] w-full overflow-hidden relative bg-slate-200"
+    >
+      <div class="gradient h-full flex flex-col justify-between">
+        <!--Sarting Navigation Bar-->
+        <nav class="flex justify-between p-5 items-center text-lg text-white">
+          <div class="left flex gap-5 items-center">
+            <div class="logo text-2xl font-bold">Horizontal</div>
+            <ul class="links flex gap-3">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Reservation</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="search">
+            <input
+              type="text"
+              class="bg-[#fff5] text-sm p-2 pl-2 rounded-md border border-[#fff7] outline-none placeholder:text-sm placeholder:text-zinc-100"
+              placeholder="Serach by Keyword..."
+            />
+          </div>
+          <div class="buttons">
+            <button>En</button>
+            <a href="#" class="text-black bg-white p-2 rounded-md"
+              >Get started</a
+            >
+          </div>
+        </nav>
+        <section class="mb-10 mx-3">
+          <h1 class="text-4xl text-white">Find Your Best Room!</h1>
+          <div class="p-5 bg-white rounded-lg mt-5">
+            <form action="" method="post">
+              <div class="flex gap-3">
+                <div class="field w-full">
+                  <label class="text-sm text-zinc-600 capitalize" for="field 1"
+                    >Floor level</label
+                  ><br />
+                  <input
+                    class="p-2 bg-zinc-100 rounded-md w-full"
+                    type="text"
+                    name="field 1"
+                  />
+                </div>
+                <div class="field w-full">
+                  <label class="text-sm text-zinc-600 capitalize" for="field 2"
+                    >Room type</label
+                  ><br />
+                  <input
+                    class="p-2 bg-zinc-100 rounded-md w-full"
+                    type="text"
+                    name="field 2"
+                  />
+                </div>
+                <div class="field w-full">
+                  <label class="text-sm text-zinc-600 capitalize" for="field 3"
+                    >Room size</label
+                  ><br />
+                  <input
+                    class="p-2 bg-zinc-100 rounded-md w-full"
+                    type="text"
+                    name="field 3"
+                  />
+                </div>
+              </div>
+              <div class="flex justify-between mt-3">
+                <div></div>
+                <div>
+                  <button class="bg-black text-white p-2 px-3 rounded-md">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </header>
+    <!--Services Section-->
+    <section class="mx-4">
+      <nkiko class="mt-10 block" />
+      <h1 class="text-3xl mb-1">Discover Our Services</h1>
+      <p class="text-zinc-700">Exprol our different services we serve</p>
+      <div
+        class="duplicate-4 px-2 gap-3 cards mt-10 grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2"
+      >
+        <div class="card w-full">
+          <div class="container flex gap-3 justify-between">
+            <div class="data">
+              <h1 class="text-xl">Rooms Bookings</h1>
+              <p class="text-sm text-zinc-600">Book Hotel rooms online</p>
+            </div>
+            <div class="arrow-sample size-10 animate-pulse rounded-md"></div>
+          </div>
+          <div class="cover w-full mt-3 rounded-md overflow-hidden h-[150px]">
+            <img
+              src="./public/img/BedRoom3.jpg"
+              class="object-cover size-full"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mx-4">
+      <nkiko class="mt-10 block" />
+      <h1 class="text-3xl mb-1">Discover Our Rooms</h1>
+      <p class="text-zinc-700">Exprol our different services we serve</p>
+      <div
+        class="duplicate-8 px-2 gap-3 cards mt-10 grid md:grid-cols-4 grid-cols-1"
+      >
+        <div class="card w-full">
+          <div
+            class="cover w-full mt-3 rounded-md overflow-hidden h-[200px] md:h-[150px]"
+          >
+            <img
+              src="./public/img/BedRoom1.jpg"
+              class="object-cover size-full"
+              alt=""
+            />
+          </div>
+          <div class="container mt-2 flex gap-3 justify-between">
+            <div class="data">
+              <h1 class="text-xl">Open curve Room</h1>
+              <p class="text-sm text-zinc-600">floor level 1</p>
+              <p class="text-sm text-zinc-600">4.5 (1,200 reviews)</p>
+              <h1 class="text-3xl">
+                56k rwf
+                <sup class="text-sm text-zinc-500">
+                  <s>78 Rwf</s>
+                </sup>
+                <p class="text-sm text-zinc-600">Includes tax fees</p>
+              </h1>
+            </div>
+            <div class="arrow-sample size-10 animate-pulse rounded-md"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./public/js/duplicateJS.js"></script>
+  </body>
+</html>
