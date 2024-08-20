@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./public/js/tailwind.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <style>
       .absolute {
         transform: translate(-50%, -50%);
@@ -138,7 +142,7 @@
       <h1 class="text-3xl mb-1">Discover Our Rooms</h1>
       <p class="text-zinc-700">Exprol our different services we serve</p>
       <div
-        class="duplicate-8 px-2 gap-3 cards mt-10 grid md:grid-cols-4 grid-cols-1"
+        class="duplicate-4 px-2 gap-3 cards mt-10 grid md:grid-cols-4 grid-cols-1"
       >
         <div class="card w-full">
           <div
@@ -153,8 +157,14 @@
           <div class="container mt-2 flex gap-3 justify-between">
             <div class="data">
               <h1 class="text-xl">Open curve Room</h1>
-              <p class="text-sm text-zinc-600">floor level 1</p>
-              <p class="text-sm text-zinc-600">4.5 (1,200 reviews)</p>
+              <p class="text-sm text-zinc-600">
+                <i class="bi bi-building"></i>
+                floor level 1
+              </p>
+              <p class="text-sm text-zinc-600">
+                <i class="bi bi-star"></i>
+                4.5 (1,200 reviews)
+              </p>
               <h1 class="text-3xl">
                 56k rwf
                 <sup class="text-sm text-zinc-500">
@@ -168,6 +178,142 @@
         </div>
       </div>
     </section>
+    <section class="mx-4">
+      <nkiko class="mt-10 block" />
+      <h1 class="text-3xl mb-1">Get A coffee mug</h1>
+      <p class="text-zinc-700">Exprol our different services we serve</p>
+      <div
+        class="duplicate-4 px-2 gap-3 cards mt-10 grid md:grid-cols-4 grid-cols-1"
+      >
+        <div class="card w-full">
+          <div
+            class="cover w-full mt-3 rounded-md overflow-hidden h-[200px] md:h-[150px]"
+          >
+            <img
+              src="./public/img/BedRoom1.jpg"
+              class="object-cover size-full"
+              alt=""
+            />
+          </div>
+          <div class="container mt-2 flex gap-3 justify-between">
+            <div class="data">
+              <h1 class="text-xl">Open curve Room</h1>
+              <p class="text-sm text-zinc-600">
+                <i class="bi bi-building"></i>
+                floor level 1
+              </p>
+              <p class="text-sm text-zinc-600">
+                <i class="bi bi-star"></i>
+                4.5 (1,200 reviews)
+              </p>
+              <h1 class="text-3xl">
+                56k rwf
+                <sup class="text-sm text-zinc-500">
+                  <s>78 Rwf</s>
+                </sup>
+                <p class="text-sm text-zinc-600">Includes tax fees</p>
+              </h1>
+            </div>
+            <div class="arrow-sample size-10 animate-pulse rounded-md"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mx-4">
+      <nkiko class="mt-10 block" />
+      <h1 class="text-3xl mb-5">Latest of Our gallery</h1>
+      <div class="cards-container grid grid-cols-3 gap-3">
+        <div class="h-[400px] flex flex-col gap-3">
+          <div
+            style="background-image: url(./public/img/HomeRoom2.jpg)"
+            class="w-full h-full bg-center overflow-hidden rounded-md"
+          >
+            <div class="gradient size-full"></div>
+          </div>
+          <div
+            style="background-image: url(./public/img/HomeRoom2.jpg)"
+            class="w-full h-full bg-center overflow-hidden rounded-md"
+          >
+            <div class="gradient size-full"></div>
+          </div>
+        </div>
+        <div
+          style="background-image: url(./public/img/HomeRoom2.jpg)"
+          class="w-full h-full col-span-2 bg-center overflow-hidden rounded-md"
+        >
+          <div class="gradient size-full"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="p-3 text-white bg-black rounded-md mx-3 mt-3">
+      <div class="top grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        <div class="w-full">
+          <h1 class="text-2xl mb-2">Horizone</h1>
+          <p class="text-sm text-zinc-300">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum error
+            saepe odio
+          </p>
+        </div>
+        <div class="flex flex-col items-end">
+          <ul class="text-zinc-400 *:mb-2">
+            <h1 class="text-xl text-white">About us</h1>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Bookings</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col md:items-end">
+          <ul class="text-zinc-400 *:mb-2">
+            <h1 class="text-xl text-white">About us</h1>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Bookings</a></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-2 w-full flex flex-col items-end pl-10">
+          <div class="w-fit">
+            <h1 class="text-xl">Get updates</h1>
+            <div
+              class="mt-2 flex bg-[#fff3] w-fit p-1 rounded-md border border-[#fff1]"
+            >
+              <input
+                type="text"
+                class="bg-[#fff0] p-2"
+                placeholder="Enter email address"
+              />
+              <button class="bg-white text-black p-2 text-sm rounded-md">
+                Subscribe
+              </button>
+            </div>
+            <div class="social-links mt-3 flex gap-2">
+              <div class="size-10 rounded-full flex justify-center items-center bg-[#fff3]">
+                <i class="bi bi-instagram"></i>
+              </div>
+              <div class="size-10 rounded-full flex justify-center items-center bg-[#fff3]">
+                <i class="bi bi-twitter"></i>
+              </div>
+              <div class="size-10 rounded-full flex justify-center items-center bg-[#fff3]">
+                <i class="bi bi-facebook"></i>
+              </div>
+              <div class="size-10 rounded-full flex justify-center items-center bg-[#fff3]">
+                <i class="bi bi-linkedin"></i>
+              </div>
+              <div class="size-10 rounded-full flex justify-center items-center bg-[#fff3]">
+                <i class="bi bi-youtube"></i>
+              </div>
+              <div class="size-10 rounded-full flex justify-center items-center bg-[#fff3]">
+                <i class="bi bi-whatsapp"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Copyright section-->
+      <div class="mt-3 text-white flex justify-between">
+        <p class="text-sm">&copy;2024 Horizone Hotel. All right reserved</p>
+        <p class="text-sm">By developer Nkiko Hertier</p>
+      </div>
+    </footer>
     <script src="./public/js/duplicateJS.js"></script>
   </body>
 </html>
